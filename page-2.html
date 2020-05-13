@@ -29,13 +29,13 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">Inicio</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="page-1.html">Uso de Agua en Chile</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="page-2.html">¿Qué pasa con el ganado?</a>
       </li>
     </ul>
@@ -97,98 +97,7 @@
             }
         });
     </script>
-    <script>
-       Chart.defaults.global.defaultFontFamily = "'Lucida Console', 'Monaco', 'monospace'";
-       new Chart(document.getElementById('uci').getContext('2d'), {
-           type: 'bar',
-           data: {
-               labels: ["Alimentos"],
-               datasets: [{
-                   label: 'Carne bovina (vaca)',
-                   borderColor: '#15687A',
-                   backgroundColor: '#15687A',
-                   borderWidth: 1,
-                   pointRadius: 2,
-                   lineTension: 0,
-                   data: [15415]
-               }, {
-                   label: 'Carne de oveja y cabra',
-                   borderColor: '#1A7E94',
-                   backgroundColor: '#1A7E94',
-                   borderWidth: 1,
-                   pointRadius: 2,
-                   lineTension: 0,
-                   data: [8763]
-               }, {
-                   label: 'Carne de Cerdo',
-                   borderColor: '#1E92AC', // noten que este color coincide con el de h1{…} en el CSS
-                   backgroundColor: '#1E92AC', // esto para darle consistencia a los colores en uso
-                   borderWidth: 1,
-                   pointRadius: 2,
-                   lineTension: 0,
-                   data: [5988]
-               }, {
-                   label: 'Carne de pollo',
-                   borderColor: '#22A4C2',
-                   backgroundColor: '#22A4C2',
-                   borderWidth: 1,
-                   pointRadius: 2,
-                   lineTension: 0,
-                   data: [4325]
-               }, {
-                   label: 'Legumbres',
-                   borderColor: '#24B1D1',
-                   backgroundColor: '#24B1D1',
-                   borderWidth: 1,
-                   pointRadius: 2,
-                   lineTension: 0,
-                   data: [4055]
-               }, {
-                   label: 'Cereales',
-                   borderColor: '#31BBDA',
-                   backgroundColor: '#31BBDA',
-                   borderWidth: 1,
-                   pointRadius: 2,
-                   lineTension: 0,
-                   data: [1644]
-               }, {
-                   label: 'Frutas',
-                   borderColor: '#42C8E7',
-                   backgroundColor: '#42C8E7',
-                   borderWidth: 1,
-                   pointRadius: 2,
-                   lineTension: 0,
-                   data: [962]
-               }, {
-                   label: 'Verduras',
-                   borderColor: '#5CD1EC',
-                   backgroundColor: '#5CD1EC',
-                   borderWidth: 1,
-                   pointRadius: 2,
-                   lineTension: 0,
-                   data: [322]
-               }]
-           },
-           options: {
-               responsive: true,
-               title: {
-                   display: true,
-                   text: 'GASTO TOTAL DE AGUA CAUSADO POR EL CONSUMO DE ALIMENTOS (EN LITROS POR KILOGRAMO)'
-               },
-               tooltips: {
-                   position: 'nearest',
-               },
-               scales: {
-                   xAxes: [{
-                       ticks: {
-                           minRotation: 90
-                       }
-                   }]
-               }
-           },
 
-       });
-   </script>
     <!-- Lo JS de Bootstrap, que dependen de jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
